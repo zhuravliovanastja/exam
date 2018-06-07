@@ -1,0 +1,278 @@
+
+
+
+html,
+body {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #a3e5e4, #c9badb, #ecb2f6, #23D5AB);
+	background-size: 6500% 6500%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+
+.section-title {
+  font-size: 60px;
+}
+
+.section-title span {
+  color: white;
+}
+
+.intro-section {
+  padding: 50px 0;
+}
+
+
+
+.section-title_main {
+  font-size: 84px;
+}
+
+.section-title_main span {
+  color: white;
+}
+
+.intro-section_main {
+  padding: 50px 0;
+}
+
+
+
+img {
+    height: auto;
+    width: 100%; 
+      display: inline-block; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  color: #333;
+  text-align: center; 
+  margin: 0;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  line-height: 1.8;
+    text-align: center; 
+}
+
+
+
+button {
+  -webkit-border-radius: 56;
+  -moz-border-radius: 56;
+  border-radius: 56px;
+  background: none;
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  border: solid white 2px;
+  text-decoration: none;
+
+}
+
+button:hover {
+    color: #001418;
+border: solid #001418 2px;
+  text-decoration: none;
+}
+
+
+
+
+/*------------------------
+          MENU
+--------------------------*/
+
+#nav{
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    display: inline;
+    vertical-align:middle;
+}
+#nav a {
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    padding: 5px;
+}
+#nav a:hover {
+    color: #333;
+}
+
+#nav a.selected{
+     color: #333;
+     text-decoration: none;
+     pointer-events: none;
+ }
+
+ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+
+
+/*------------------------
+    About Page
+--------------------------*/
+.pic-frame {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  display: inline-block;
+}
+
+.pic-frame:after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 25px);
+  height: calc(100% - 25px);
+  bottom: 0;
+  left: 0;
+  border: 2px solid #000;
+  z-index: 1;
+}
+
+.pic {
+  
+  padding-left: 40px;
+  padding-bottom: 40px;
+  display: inline-block; 
+}
+
+
+/* ===========================
+         Footer
+==============================*/
+
+
+.footer{
+  float: left;
+  margin-right: 10px;
+  margin-top: 14px;
+  color: #fff;
+  margin-left: 37%;
+  display: block;
+
+
+}
+.icons img {
+  width: 20px;
+  height: auto;
+  margin: 10px 3px;
+  color: white;
+
+}
+
+
+.icons img:hover {
+    background-color: #333;
+}
+
+/* ===========================
+         Responsive
+==============================*/
+
+@media only screen and (max-width: 479px) {
+  .section-title {
+    font-size: 30px;
+  }
+    .section-title_main {
+    font-size: 40px;
+  }
+}
+
+
+@media screen and (max-width: 590px){
+  .footer{
+    margin-left: 15%;}
+}
+@media screen and (max-width: 470px){
+.header img{
+  margin-left: 13px;}
+  .footer{
+    margin-left: 7%;
+    margin-right: 4px;
+  }
+  .icons img{
+    margin: 10px 3px;
+  }
+}
+
+@media screen and (max-width: 373px){
+    .footer{ 
+      margin-left: 2%;
+      margin-right: 4px;
+      font-size: 10px;
+}
+    .icons img {
+    width: 15px;
+    height: 15px;
+    margin: 8px 2px
+  }
+@media screen and (max-width: 374px){
+  .footer{ 
+      margin-left: 14%;
+}
+@media screen and (max-width: 295px){
+  .footer{ 
+      margin-left: 5%;
+      text-align: center;
+
+}
+
+    
